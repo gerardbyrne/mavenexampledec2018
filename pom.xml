@@ -24,12 +24,12 @@
 
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>localrepository</id>
-            <url>file://${basedir}/repo</url>
-        </repository>
-    </repositories>
+    <distributionManagement>
+            <repository>
+                <id>localrepository</id>
+                <url>file://${basedir}/repo</url>
+            </repository>
+    </distributionManagement>
 
 
 </project>
