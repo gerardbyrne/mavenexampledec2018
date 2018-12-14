@@ -14,7 +14,7 @@ pipeline
         stage('Testing Stage')
         {
         steps{
-                sh 'mvn surefire:test -Dtest=MyAppTests
+                sh 'mvn surefire:test -Dtest=MyAppTests'
 '
              }
         }
