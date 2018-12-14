@@ -24,5 +24,12 @@
 
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>localrepository</id>
+            <url>file://${basedir}/repo</url>
+        </repository>
+    </repositories>
+
 
 </project>
