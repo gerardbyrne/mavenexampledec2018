@@ -9,31 +9,27 @@ tools {
     {
         stage('Compile Stage')
         {
-        steps{
+        steps
               {
                 sh 'mvn clean compile'
              }
-            }
+
         }
 
         stage('Testing Stage')
         {
-        steps{
-
+        steps
              {
                 sh 'mvn test'
              }
-            }
         }
 
         stage('Deployment Stage')
         {
-         steps{
-             
+         steps
              {
                 sh 'mvn deploy'
              }
-            }
         }
     }
 }
