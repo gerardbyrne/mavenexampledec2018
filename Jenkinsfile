@@ -27,7 +27,6 @@ pipeline
 
         stage('Code Analysis Stage')
         {
-         steps{
                 def mvnHome = tool 'mvn-default'
 
                         sh "${mvnHome}/bin/mvn -batch-mode -V -U -e checkstyle:checkstyle pmd:pmd pmd:cpd findbugs:findbugs spotbugs:spotbugs"
@@ -46,8 +45,6 @@ pipeline
 
                         def spotbugs = scanForIssues tool: [$class: 'SpotBugs'], pattern: '**/target/spotbugsXml.xml'
                         publishIssues issues:[spotbugs]
-             }
         }
-
     }
 }
