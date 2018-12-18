@@ -1,9 +1,10 @@
-pipeline
-{
-    agent any
+//pipeline
+//{
+ //   agent any
 
-    stages
-    {
+  //  stages
+  //  {
+  node {
         stage('Compile Stage')
         {
         steps{
@@ -33,4 +34,4 @@ pipeline
         }
 
     }
-}
+// }
